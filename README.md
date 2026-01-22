@@ -21,12 +21,12 @@ The system is validated in a high-fidelity simulation environment powered by **R
 ### Data Processing & Training
 *   **`train.py`**: Script for training the YOLOv12 model on the custom wind turbine dataset.
 *   **`Data_set_division.py`**: Utility to split the dataset into training and validation sets.
-*   **`Dataset_annotation.py`**: Tools for processing and formatting dataset annotations (e.g., converting to YOLO format).
+*   **`Dataset_annotation.py`**: Tools for processing and formatting dataset annotations 
 *   **`Video_frame_segmentation.py`**: Extracts frames from recorded videos to build the dataset.
 
 ### Simulation & Utilities
 *   **`Video_recording.py`**: Controls the UAV in the simulation to record flight footage for dataset creation.
-*   **`only_fly.py`**: Simple script for testing UAV flight control commands (MavLink) independent of visual processing.
+*   **`only_fly.py`**: Simple script for testing UAV flight control commands independent of visual processing.
 *   **`requirements.txt`**: List of Python dependencies required to run the project.
 
 ## 🛠️ Installation
@@ -45,3 +45,8 @@ The system is validated in a high-fidelity simulation environment powered by **R
 
 3.  **Simulation Environment:**
     This project relies on the **RflySim** platform for HITL/SITL simulation. Ensure RflySim is installed and the `UE4CtrlAPI` and `PX4MavCtrl` interfaces are accessible.
+
+## 🙏 Acknowledgments
+
+*   **RflySim Platform**: We extensively use [RflySim](https://rflysim.com/) for our high-fidelity simulation environment, which supports photorealistic rendering and physics-based UAV control.
+*   **Ultralytics**: For the implementation of the YOLO object detection framework.
